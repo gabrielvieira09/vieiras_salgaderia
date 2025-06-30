@@ -9,7 +9,7 @@ import Header from "@/components/Header"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Vieira's Salgaderia - Os Melhores Salgados",
+  title: "Vieira's Salgaderia",
   description: "Salgados frescos e saborosos feitos com amor e tradição",
     generator: 'v0.dev'
 }

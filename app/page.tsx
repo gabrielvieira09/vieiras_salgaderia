@@ -12,10 +12,10 @@ import { supabase } from "@/lib/supabaseClient"
 import Footer from "@/components/Footer"
 
 const categories = [
-  { value: "all", label: "Todos", icon: "🍽️" },
-  { value: "Fritos", label: "Fritos", icon: "🍤" },
-  { value: "Assados", label: "Assados", icon: "🥖" },
-  { value: "Doces", label: "Doces", icon: "🧁" },
+  { value: "all", label: "Todos"},
+  { value: "Fritos", label: "Fritos"},
+  { value: "Assados", label: "Assados"},
+  { value: "Doces", label: "Doces"},
 ]
 
 export default function HomePage() {
@@ -133,21 +133,6 @@ export default function HomePage() {
             Os melhores salgados da região, feitos com amor e tradição
           </p>
           
-          {/* Estatísticas */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto mb-8">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-laranja-400">{stats.total}</div>
-              <div className="text-sm text-gray-200">Produtos</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-laranja-400">{stats.inStock}</div>
-              <div className="text-sm text-gray-200">Em Estoque</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-laranja-400">{stats.categories}</div>
-              <div className="text-sm text-gray-200">Categorias</div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -187,7 +172,6 @@ export default function HomePage() {
                     }
                   `}
                 >
-                  <span className="mr-2">{category.icon}</span>
                   {category.label}
                   {category.value !== "all" && (
                     <Badge 

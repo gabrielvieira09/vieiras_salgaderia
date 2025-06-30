@@ -124,7 +124,7 @@ export default function ProductReview({ productId }: ProductReviewProps) {
               </span>
             </div>
             <Badge variant="secondary" className="bg-vinho-100 text-vinho-800">
-              {reviews.length} avaliação{reviews.length !== 1 ? 'ões' : ''}
+              {reviews.length} avaliação{reviews.length !== 1 ? '' : ''}
             </Badge>
           </div>
         </div>
